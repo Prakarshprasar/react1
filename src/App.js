@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import {Hello1,Hello2} from './component/hello';
+import Answer from './component/answer'
 
 function App() {
+  let arr1=["Android","Blackberry","IPhone","Windows Phone"];
+  let arr2=["Samsung","HTC","Micromax","Apple"]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+        <Hello1/>
+        <Answer arr={arr1}/>
+        <Hello2/>
+        <Answer arr={arr2}/>
+        
     </div>
   );
 }
